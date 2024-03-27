@@ -2,9 +2,9 @@ import 'package:blog/core/theme/color_pallet.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
-  const GradientButton({super.key, required this.text, required this.submit});
+  const GradientButton({super.key, required this.text});
   final String text;
-  final VoidCallback submit;
+  // final VoidCallback submit;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class GradientButton extends StatelessWidget {
           ], begin: Alignment.bottomLeft, end: Alignment.topRight),
           borderRadius: BorderRadius.circular(10)),
       child: ElevatedButton(
-        onPressed: submit,
+        onPressed: null,
         style: ElevatedButton.styleFrom(
             fixedSize: const Size(395, 55),
             backgroundColor: Colors.transparent,
